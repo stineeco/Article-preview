@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Josefin+Sans:wght@300;400;600&family=Libre+Franklin:wght@700&family=Manrope:wght@500;700&display=swap');
+
+
+
+body{
+    font-family: 'Manrope', sans-serif;
+    background:  hsl(210, 46%, 95%) ;
+}
+
+
+
+
+.main_container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.article{
+    display: flex;
+}
+
+.article_text{
+    height: 340px;
+    background: white;
+    padding: 20px 20px 40px 50px;
+}
+
+
+.art_img{
+    width: 290px;
+    height: 400px;
+}
+
+h1{
+    font-size: 26px;
+    width: 480px;
+    font-weight: 700;
+    color: hsl(217, 19%, 35%);
+}
+
+.article_text .ever_text {
+    letter-spacing: 1.5px;
+    font-size: 13px;
+    width: 450px;
+    font-weight: 600;
+    color: hsl(212, 23%, 69%);
+}
+
+
+
+
+.how_colume{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+
+.how_colume .avatar_michelle img{
+    width: 50px;
+    border-radius: 50%;
+}
+
+.how_colume  .date_div p {
+    line-height: 8px;font-weight: 600;
+}
+
+.date_div .michelle_name{
+    color: hsl(217, 19%, 35%);
+}
+
+.date_div .michelle_date{
+    color: hsl(212, 23%, 69%);
+}
+
+
+.how_colume .social_arrow{
+    display: inline-flex;
+    margin-left: auto;
+    margin-right: 10px;
+   
+}
+
+button{
+    color: hsl(217, 19%, 35%);
+    border: none;
+    padding: 7px;
+    margin-left: auto;
+    display: inline-flex;
+    border-radius: 50%;
+    background-color:  hsl(210, 46%, 95%) ;
+}
+
+
+
+button:hover{
+    color:white;
+    background-color:   hsl(217, 19%, 35%);
+}
+
+
+.how_colume .pop_up{
+    bottom: 65px;
+    left: 360px;
+    gap: 10px;
+    display: flex;
+    position: absolute;
+    border-radius: 10px;
+    align-items: center;
+    padding: 0px 20px 0px 20px;
+    background-color:hsl(217, 19%, 35%) ;
+}
+
+.how_colume  .arrow_div{
+
+    position:absolute;
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid hsl(217, 19%, 35%);
+    bottom: 55px;
+    left: 440px;
+    
+}
+
+.pop_up p {
+    font-size: 12px;
+    letter-spacing: 5px;
+    transition: font-size 1s;
+    color: hsl(212, 23%, 69%);
+}
+
+.pop_up p:hover{
+    font-size: 13px;
+    letter-spacing: 6px;
+}
+
+.pop_up #fb_icon {
+    font-size: 15px;
+    color: white;
+    transition: font-size 1s;
+}
+.pop_up #fb_icon:hover{
+    font-size: 20px;
+}
+.pop_up #twitter_icon{
+    color: white;
+    font-size: 15px;
+    transition: font-size 1s;
+}
+.pop_up #twitter_icon:hover{
+    font-size: 20px;
+}
+
+.pop_up #pint_icon{
+    font-size: 15px;
+    display: inline-flex;
+    color: white;
+    border-radius: 50%;
+    transition: font-size 1s;
+}
+
+.pop_up #pint_icon:hover{
+    font-size: 20px;
+}
+    
+#social_pop{
+  visibility: hidden
+}
+
+
+@media  (min-width:200px)and (max-width:510px ) {
+
+    .article{
+        gap: 0;
+        display: grid;
+        background: white;
+        border-radius: 10px 10px 10px 10px;
+        
+        
+    }
+
+    .article_text{
+       
+        height: 286px;
+        background: white;
+        padding: 20px 0px 0px 0px; 
+        border-radius: 0px 0px 10px 10px;
+    }
+    
+    
+    
+    .art_img{
+        margin: 0;
+        width: 370px;
+        height: 280px;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+
+    h1{
+        font-size: 17px;
+        width: 280px;
+        padding: 0px 20px 0px 40px;
+    }
+    
+    .article_text .ever_text {
+        margin-top: 20px;
+        font-size: 11px;
+        width: 290px;
+        padding: 0px 20px 0px 40px;
+    }
+
+    .how_colume{
+       margin-top: 30px;
+       padding: 0px 20px 0px 40px;
+    }
+
+    button{
+        margin-top: 16px;
+        padding: 9px;
+        margin-left: auto;
+        display: inline-flex;
+        border-radius: 50%;
+        background-color:  hsl(210, 46%, 95%) ;
+        z-index: 10;
+    }
+
+    button:hover{
+        color:white;
+        background-color:   hsl(212, 23%, 69%);
+    }
+    
+
+
+    .how_colume .pop_up{
+        top: 0px;
+        bottom: 0;
+        left: 0px;
+        gap: 20px;
+        border-radius: 0px 0px 10px 10px ;
+        width: 370px;
+        padding: 40px 0px 40px 0px;
+    }
+    
+    .how_colume  .arrow_div{
+       display: none;
+    }
+    
+
+
+.pop_up p {
+    margin-left: 40px;
+    font-size: 16px;
+    letter-spacing: 5px;
+    transition: font-size 1s;
+    color: hsl(212, 23%, 69%);
+}
+
+.pop_up p:hover{
+    font-size: 21px;
+    letter-spacing: 6px;
+}
+
+.pop_up #fb_icon {
+    font-size: 25px;
+}
+.pop_up #fb_icon:hover{
+    font-size: 30px;
+}
+.pop_up #twitter_icon{
+    font-size: 25px;
+}
+.pop_up #twitter_icon:hover{
+    font-size: 30px;
+}
+
+.pop_up #pint_icon{
+    font-size: 25px;
+}
+
+.pop_up #pint_icon:hover{
+    font-size: 30px;
+}
+
+
+  
+}
+
+
+
